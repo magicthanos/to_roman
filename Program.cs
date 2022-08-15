@@ -15,12 +15,14 @@ public static class RomanNumeralExtension
     //the function can convert numbers from 0 to 4999
 
     string romanNumeral = "";
+    int div = (int)Math.Pow(10, value.ToString().Length - 1); //used to "divide" the number in units
+
     while (value != 0)
     {
-      int div = (int)Math.Pow(10, value.ToString().Length - 1); //used to "divide" the number in units
 
       int numToAdd = (int)(value / div) * div; //floor to nearest 10th
       value -= numToAdd; //subtracts the previous number
+      div /= 10;
 
       romanNumeral += numToAdd.ToRomanChars();
     }
