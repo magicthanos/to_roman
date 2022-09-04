@@ -1,4 +1,6 @@
-﻿public static class Program
+using System.Text;
+
+public static class Program
 {
   public static void Main()
   {
@@ -14,7 +16,7 @@ public static class RomanNumeralExtension
   {
     //the function can convert numbers from 0 to 4999
 
-    string romanNumeral = "";
+    StringBuilder romanNumeral = new StringBuilder();
     int div = (int)Math.Pow(10, value.ToString().Length - 1); //used to "divide" the number in units
 
     while (value != 0)
@@ -24,9 +26,9 @@ public static class RomanNumeralExtension
       value -= numToAdd; //subtracts the previous number
       div /= 10;
 
-      romanNumeral += numToAdd.ToRomanChars();
+      romanNumeral.Append(numToAdd.ToRomanChars());
     }
-    return romanNumeral;
+    return romanNumeral.ToString();
   }
 
   private static string ToRomanChars(this int value) =>
