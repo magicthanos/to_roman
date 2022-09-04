@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Magic\\Desktop\\Coding Folder\\c#\\c#.csproj": {}
+    "C:\\Users\\Magic\\Desktop\\Coding Folder\\to_roman\\c#.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Magic\\Desktop\\Coding Folder\\c#\\c#.csproj": {
+    "C:\\Users\\Magic\\Desktop\\Coding Folder\\to_roman\\c#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Magic\\Desktop\\Coding Folder\\c#\\c#.csproj",
+        "projectUniqueName": "C:\\Users\\Magic\\Desktop\\Coding Folder\\to_roman\\c#.csproj",
         "projectName": "c#",
-        "projectPath": "C:\\Users\\Magic\\Desktop\\Coding Folder\\c#\\c#.csproj",
+        "projectPath": "C:\\Users\\Magic\\Desktop\\Coding Folder\\to_roman\\c#.csproj",
         "packagesPath": "C:\\Users\\Magic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Magic\\Desktop\\Coding Folder\\c#\\obj\\",
+        "outputPath": "C:\\Users\\Magic\\Desktop\\Coding Folder\\to_roman\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Magic\\AppData\\Roaming\\NuGet\\NuGet.Config",
