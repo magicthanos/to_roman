@@ -14,7 +14,7 @@ public static class RomanNumeralExtension
 {
   public static string ToRoman(this int value)
   {
-    //the function can convert numbers from 0 to 4999
+    //the function can convert numbers from 0 to 3999
 
     StringBuilder romanNumeral = new StringBuilder();
     int div = (int)Math.Pow(10, value.ToString().Length - 1); //used to "divide" the number in units
@@ -37,7 +37,7 @@ public static class RomanNumeralExtension
 
       value switch
       {
-        <= 0 or >= 5000 => throw new ArgumentOutOfRangeException(nameof(value)),
+        <= 0 or >= 3999 => throw new ArgumentOutOfRangeException(nameof(value)),
         >= 1000 => new string('M', value / 1000),
         900 => "CM",
         >= 500 => "D" + new string('C', (value - 500) / 100),
